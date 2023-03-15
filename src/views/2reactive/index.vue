@@ -11,6 +11,7 @@ defineOptions({
  * const xxx = reactive(obj) : 接收一个普通对象然后返回该对象的响应式代理器对象
  * 响应式转换是 "深层的" : 会影响对象内部所有嵌套的属性
  * 内部基于 ES6 的 --> Proxy <-- 实现，通过代理对象操作源对象内部数据都是响应式的
+ * 在reactive定义的多个数据的响应式中,更改数据是不用 key.value 来进行更改相应的proxy值的
  */
 // 定义数据类型
 const status = reactive({

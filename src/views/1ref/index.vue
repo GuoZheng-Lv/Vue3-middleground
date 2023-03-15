@@ -17,6 +17,8 @@ defineOptions({
 
 const count: number = ref(1);
 const upData = () => {
+  console.log(count);
+
   count.value = ++count.value;
 };
 </script>
