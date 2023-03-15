@@ -7,7 +7,7 @@ defineOptions({
 /**
  * ref(initValue)
  *
- * 作用: 定义一个数据的响应式
+ * 作用: 定义 一个  数据的响应式
  * 语法: const xxx = ref(initValue)
  *     - 创建一个包含响应式数据的引用(reference)对象
  *     - js 中操作数据: xxx.value
@@ -16,7 +16,6 @@ defineOptions({
  */
 
 const count: number = ref(1);
-
 const upData = () => {
   count.value = ++count.value;
 };
