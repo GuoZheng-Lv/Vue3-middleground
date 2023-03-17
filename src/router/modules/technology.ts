@@ -53,6 +53,34 @@ const technologyRouter: RouteConfigsTable = {
       meta: {
         title: "monitor属性"
       }
+    }, {
+      path: "/technology-onLifecycle",
+      name: "technology-onLifecycle",
+      component: () => import("@/views/vue/7onLifecycle/index.vue"),
+      meta: {
+        title: "生命周期"
+      }
+    }, {
+      path: "/technology-hook",
+      name: "technology-hook",
+      component: () => import("@/views/vue/8hook/index.vue"),
+      meta: {
+        title: "HOOK函数"
+      }
+    }, {
+      path: "/technology-fetch",
+      name: "technology-fetch",
+      component: () => import("@/views/vue/9fetch/index.vue"),
+      meta: {
+        title: "FETCH异步请求"
+      }
+    }, {
+      path: "/technology-toRefs",
+      name: "technology-toRefs",
+      component: () => import("@/views/vue/10toRefs/index.vue"),
+      meta: {
+        title: "TOREFS"
+      }
     }
   ]
 };
