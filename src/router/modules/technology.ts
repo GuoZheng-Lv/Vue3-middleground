@@ -88,7 +88,29 @@ const technologyRouter: RouteConfigsTable = {
       meta: {
         title: "REFDOM"
       }
+    }, {
+      path: "/technology-shallowReactive_shallowRef",
+      name: "technology-shallowReactive_shallowRef",
+      component: () => import("@/views/vue/12shallowReactive_shallowRef/index.vue"),
+      meta: {
+        title: "shallowReactive/shallowRef"
+      }
+    }, {
+      path: "/technology-readonly_shallowReadonly",
+      name: "technology-readonly_shallowReadonly",
+      component: () => import("@/views/vue/13readonly_shallowReadonly/index.vue"),
+      meta: {
+        title: "readonly/shallowReadonly"
+      }
+    }, {
+      path: "/technology-toRaw_markRaw",
+      name: "technology-toRaw_markRaw",
+      component: () => import("@/views/vue/14toRaw_markRaw/index.vue"),
+      meta: {
+        title: "toRaw/markRaw"
+      }
     }
+
   ]
 };
 

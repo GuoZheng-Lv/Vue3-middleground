@@ -23,7 +23,7 @@ const changeInput = () => {
 <template>
   <div>
     <h2>App</h2>
-    <input type="text" />
+    <input v-model="inputBlur" type="text" />
     <br />
     <input
       v-model="inputBlur"
