@@ -77,9 +77,16 @@ const technologyRouter: RouteConfigsTable = {
     }, {
       path: "/technology-toRefs",
       name: "technology-toRefs",
-      component: () => import("@/views/vue/10toRefs/index.vue"),
+      component: () => import("@/views/vue/10ToRefs/index.vue"),
       meta: {
         title: "TOREFS"
+      }
+    }, {
+      path: "/technology-refDom",
+      name: "technology-refDom",
+      component: () => import("@/views/vue/11refDom/index.vue"),
+      meta: {
+        title: "REFDOM"
       }
     }
   ]
