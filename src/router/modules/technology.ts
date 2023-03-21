@@ -12,6 +12,14 @@ const technologyRouter: RouteConfigsTable = {
   },
   children: [
     {
+      path: "/technology-TodoList",
+      name: "technology-TodoList",
+      component: () => import("@/views/vue/0TodoList/index.vue"),
+      meta: {
+        title: "TodoList"
+      }
+    },
+    {
       path: "/technology-ref",
       name: "technology-ref",
       component: () => import("@/views/vue/1ref/index.vue"),
@@ -108,6 +116,97 @@ const technologyRouter: RouteConfigsTable = {
       component: () => import("@/views/vue/14toRaw_markRaw/index.vue"),
       meta: {
         title: "toRaw/markRaw"
+      }
+    }, {
+      path: "/technology-toRef",
+      name: "technology-toRaw_markRaw",
+      component: () => import("@/views/vue/15toRef/index.vue"),
+      meta: {
+        title: "TOREF"
+      }
+    }, {
+      path: "/technology-customRef",
+      name: "technology-customRef",
+      component: () => import("@/views/vue/16customRef/index.vue"),
+      meta: {
+        title: "customRef"
+      }
+    }, {
+      path: "/technology-provide_inject",
+      name: "technology-provide_inject",
+      component: () => import("@/views/vue/17provide_inject/index.vue"),
+      meta: {
+        title: "provide/inject"
+      }
+    }, {
+      path: "/technology-isApi",
+      name: "technology-isApi",
+      component: () => import("@/views/vue/18isApi/index.vue"),
+      meta: {
+        title: "isApi"
+      }
+    }, {
+      path: "/technology-shallowReactive_reactive",
+      name: "technology-shallowReactive_reactive",
+      component: () => import("@/views/vue/19shallowReactive_reactive/index.vue"),
+      meta: {
+        title: "shallowReactive/reactive"
+      }
+    }, {
+      path: "/technology-shallowRef_ref",
+      name: "technology-shallowReactive_reactive",
+      component: () => import("@/views/vue/20shallowRef_ref/index.vue"),
+      meta: {
+        title: "shallowRef/ref"
+      }
+    }, {
+      path: "/technology-shallowReadonly_readonly",
+      name: "technology-shallowReadonly_readonly",
+      component: () => import("@/views/vue/21shallowReadonly_readonly/index.vue"),
+      meta: {
+        title: "shallowReadonly/readonly"
+      }
+    }, {
+      path: "/technology-Fragment",
+      name: "technology-Fragment",
+      component: () => import("@/views/vue/23Fragment/index.vue"),
+      meta: {
+        title: "Fragment"
+      }
+    }, {
+      path: "/technology-Teleport",
+      name: "technology-Teleport",
+      component: () => import("@/views/vue/24Teleport/index.vue"),
+      meta: {
+        title: "Teleport"
+      }
+    }, {
+      path: "/technology-Suspense",
+      name: "technology-Suspense",
+      component: () => import("@/views/vue/25Suspense/index.vue"),
+      meta: {
+        title: "Suspense"
+      }
+    }, {
+      path: "/technology-globalApi",
+      name: "technology-globalApi",
+      component: () => import("@/views/vue/26globalApi/index.vue"),
+      meta: {
+        title: "globalApi"
+      }
+    }, {
+      path: "/technology-transferApi",
+      name: "technology-transferApi",
+      component: () => import("@/views/vue/27transferApi/index.vue"),
+      meta: {
+        title: "transferApi"
+      }
+    }, {
+      path: "/technology-TemplateSyntax",
+      name: "technology-TemplateSyntax",
+      component: () => import("@/views/vue/28TemplateSyntax/index.vue"),
+      meta: {
+        title: "TemplateSyntax"
       }
     }
 
